@@ -26,7 +26,7 @@ for (pkg in libs) {
 # Doc du lieu
 data <- read.csv("D:/Study/HCMUT/Semester/HK242/XSTK/BTL/dataset/StudentsPerformance.csv", 
                  stringsAsFactors = FALSE,
-                 check.names = FALSE)
+                 check.names = FALSE)  # Chỉnh lại cho đúng đường dẫn ở local
 
 # Thay doi dinh dang ten
 names(data) <- gsub(" ", "_", names(data))  # Renaming names for easier access
@@ -64,7 +64,7 @@ data <- data %>%
 # ===================================================
 # 1.5. Luu du lieu da qua xu ly
 # ===================================================
-write.csv(data, "D:/Study/HCMUT/Semester/HK242/XSTK/BTL/dataset/StudentsPerformance_Cleaned.csv", row.names = FALSE)
+write.csv(data, "D:/Study/HCMUT/Semester/HK242/XSTK/BTL/dataset/StudentsPerformance_Cleaned.csv", row.names = FALSE) # Chỉnh lại cho đúng đường dẫn ở local
 
 #####################################################
 # 4 - THỐNG KÊ MÔ TẢ
