@@ -1,12 +1,18 @@
 # Statistics (MT2013 - HK242 - HCMUT)
 ### 📘 Students Performance in Exams
+#### 🧑‍🏫 Giảng viên hướng dẫn
 
-| Giảng viên hướng dẫn     | TS. Nguyễn Đình Huy            |
-|--------------------------|-------------------------------|
-| **Nhóm 5 – Thành viên**  |                               |
-| Tăng Hồng Ái             |                               |
-| Phạm Khánh Duy           |                               |
-| Trần Vĩnh Dũng           |                               |
-| Bùi Trọng Hiển           |                               |
-| Nguyễn Xuân Huy Hoàng    |                               |
-| Nguyễn Trần Yến Nhi      |                               |
+| Họ tên               |
+|----------------------|
+| TS. Nguyễn Đình Huy  |
+
+#### 👨‍🎓 Nhóm 5 – Thành viên
+
+| STT | Họ và tên                |
+|-----|--------------------------|
+| 1   | Tăng Hồng Ái             |
+| 2   | Phạm Khánh Duy          |
+| 3   | Trần Vĩnh Dũng          |
+| 4   | Bùi Trọng Hiển          |
+| 5   | Nguyễn Xuân Huy Hoàng   |
+| 6   | Nguyễn Trần Yến Nhi     |
