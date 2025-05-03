@@ -423,13 +423,6 @@ summary(anova_result)
 # 5.3.1. Tiền dữ liệu của mô hình
 # ===================================================
 
-# Đưa các biến phân loại thành dummy variables
-data$gender <- as.factor(data$gender)
-data$`race/ethnicity` <- as.factor(data$`race/ethnicity`)
-data$parental_level_of_education <- as.factor(data$parental_level_of_education)
-data$test_preparation_course <- as.factor(data$test_preparation_course)
-data$lunch <- as.factor(data$lunch)
-
 # Chia dữ liệu thành tập huấn luyện và tập kiểm tra (80% train, 20% test)
 set.seed(123) # Không thay đổi sau mỗi lần chạy lại
 
