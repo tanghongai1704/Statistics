@@ -505,13 +505,13 @@ df_plot <- data.frame(Actual = test_data$writing_score, Predicted = predictions)
 
 ggplot(df_plot, aes(x = Actual, y = Predicted)) +
   geom_point(color = "blue", size = 1) + 
-  geom_abline(intercept = 0, slope = 1, color = "red", size = 0.5) + 
+  geom_abline(intercept = 0, slope = 1, color = "red", linewidth = 0.5) + 
   labs(title = "Actual vs Predicted",
        x = "Actual", 
        y = "Predicted") + 
   theme_minimal() +
   theme(
-    panel.border = element_rect(color = "black", fill = NA, size = 1)
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 1)
   )
 
 # Đánh giá mô hình trên tập test
