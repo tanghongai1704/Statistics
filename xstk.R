@@ -3,8 +3,9 @@
 #####################################################
 
 # Cài đặt và load các thư viện được sử dụng 
-libs <- c("readr", "lmtest", "car", "ggplot2", "dplyr", 
-"patchwork","corrplot", "dplyr", "tidyr", "stringr","forcats")
+libs <- c("readr", "lmtest", "car", "ggplot2",
+          "patchwork","corrplot", "dplyr", 
+          "tidyr", "stringr","forcats")
 
 for (pkg in libs) {
   if (!require(pkg, character.only = TRUE)) {
