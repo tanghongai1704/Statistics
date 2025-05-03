@@ -143,7 +143,7 @@ par(mfrow = c(1, 2))  # 1 hàng và 2 cột, Đặt cấu hình để vẽ 2 bi�
 hist(data[["math_score"]], breaks = seq(0, 100, by = 5),
      xlab = "Math score", ylab = "Frequency", main = "Histogram of Math Scores",
      col = "lightblue")
-boxplot(data[["math_score"]], ylab = "Frequency", main = "Boxplot of Math Scores",
+boxplot(data[["math_score"]], ylab = "Math score", main = "Boxplot of Math Scores",
         col = "darkred")  # Vẽ biểu đồ boxplot
 par(mfrow = c(1, 1))  # Quay lại cấu hình mặc định của đồ thị (1 đồ thị)
 
@@ -153,7 +153,7 @@ par(mfrow = c(1, 2))  # 1 hàng và 2 cột
 hist(data[["reading_score"]],  breaks = seq(0, 100, by = 5), 
      xlab = "Reading score", ylab = "Frequency", main = "Histogram of Reading Scores", 
      col ="lightgreen")
-boxplot(data[["reading_score"]], ylab = "Frequency", main = "Boxplot of Reading Scores", 
+boxplot(data[["reading_score"]], ylab = "Reading score", main = "Boxplot of Reading Scores", 
         col ="purple")
 par(mfrow = c(1, 1)) # Đặt lại về 1 hàng 1 cột
 
@@ -163,7 +163,7 @@ par(mfrow = c(1, 2))  # 1 hàng và 2 cột
 hist(data[["writing_score"]],  breaks = seq(0, 100, by = 5), 
      xlab = "Writing score", ylab = "Frequency", main = "Histogram of Writing Scores", 
      col = "#f07a20")
-boxplot(data[["writing_score"]], ylab = "Frequency", main = "Boxplot of Writing scores", 
+boxplot(data[["writing_score"]], ylab = "Writing score", main = "Boxplot of Writing scores", 
         col = "#f02084")
 par(mfrow = c(1, 1))
 
@@ -456,7 +456,7 @@ shapiro.test(model_stepwise$residuals)
 
 ## Kiểm định phương sai đồng nhất
 
-# library(lmtest)
+# library(lmtest) - Kiểm định Breusch-Pagan
 bptest(model_stepwise)
 
 plot(model_stepwise$fitted.values, model_stepwise$residuals,
@@ -466,12 +466,12 @@ abline(h = 0, col = "red")
 
 ## Kiểm định phần dư độc lập (không có sự tương quan)
 
-# library(lmtest)
+# library(lmtest) - Kiểm định Durbin-Watson
 dwtest(model_stepwise)
 
 ## Kiểm định đa cộng tuyến
 
-# library(car)
+# library(car) - Kiểm định VIF (Variance Inflation Factor)
 vif(model_stepwise)
 
 # ===================================================
